@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clickToReveal>
+    <resources>
+        <![CDATA[<p>No hay material complementario para este curso.</p>]]>
+    </resources>
+<transcript><![CDATA[
+<p> 
+De acuerdo a lo establecido en el DL Nº 3500, el monto de los excedentes de libre disposición podrá ser:<br>
+• Retirado libre de impuesto hasta un máximo anual equivalente a 200 unidades tributarias mensuales.<br>
+• No pudiendo, en todo caso, exceder dicha exención el equivalente a <b>1.200 unidades tributarias mensuales.</b><br>
+• Con todo, el contribuyente podrá optar, alternativamente, por acoger sus retiros a una <b>exención máxima de 800 unidades tributarias mensuales durante un año.</b></p>
+
+<p>Para que opere la exención señalada, los aportes que se efectúen para constituir dicho excedente, por concepto de <b> cotización <i>voluntaria o depósito de ahorro previsional voluntario,</i></b>  deberán <b> haberse efectuado con a lo menos 48 meses de anticipación a la determinación de dicho excedente.</b></p>
+
+<p><b>Según el Artículo 42 quáter</b>, no tienen exención tributaria en el excedente de libre disposición: <br>
+
+•      Las cotizaciones voluntarias o depósitos de ahorro previsional voluntario, con menos de 48 meses de antigüedad en la cuenta. <br>
+•     La cotizaciones obligatorias, voluntarias y depósitos convenidos efectuadas con posterioridad a la pensión. <br>
+•    Los Depósitos Convenidos efectuados con anterioridad a enero de 2011 <br>
+  Los Depósitos Convenidos efectuados a partir de enero de 2011, por sobre las 900 UF anuales y su rentabilidad. Artículo 6°</p>
+
+
+<p>El tratamiento tributario de los Excedentes de Libre Disposición con anterioridad a la incorporación del artículo 42 ter, se establecía en el artículo 71 del D.L. N° 3.500, disposición que preceptuaba lo siguiente al respecto:</p>
+<p>La tasa que afectaba a los retiros de los excedentes de libre disposición se calculaba por una sola vez, en el momento en que el afiliado se acogía a pensión y esta misma tasa se aplicaba a cada uno de los retiros que el pensionado realizaba de su Cuenta de Capitalización Individual en fechas posteriores.</p>
+
+<p>Los retiros de los excedentes de libre disposición por disposición del artículo 71 del D.L Nº 3.500, <b> no debían declararse en calidad de "rentas exentas"</b> en la Renta Bruta del Impuesto Global Complementario.</p>
+
+<p>Todos aquellos pensionados que registraban en su Cuenta de Capitalización Individual un saldo de excedente de libre disposición, igual o inferior a <b>135 Unidades Tributarias Anuales</b> a la fecha en que se acogían a pensión, los retiros de dichos excedentes se encontraban exentos del impuesto único.</p>
+]]></transcript>
+
+    <widthClass><![CDATA[col-md-4]]></widthClass>
+    <imageVisited>./templates/click_to_reveal_tab_audio/images/visited.png</imageVisited>
+    <instruction>
+        <head_content>
+            <![CDATA[ ]]>
+        </head_content>
+        <para_content>
+            <![CDATA[<p><div id="tabParagraph" class="tabParagraphClass"><p>Artículos vinculados a los Excedentes de Libre Disposición</p>
+        <p class="end-feedback-instruction">Haz clic en cada cuadro para saber más.</p></p>]]>
+        </para_content>
+    </instruction>
+    <tabs>
+        <imgSrc>./pages/L2T3/images/tab-01.jpg</imgSrc>
+        <headerContent>
+            <![CDATA[<h2>Decreto de Ley Nº 3.500. Artículo 42 ter.</h2>]]></headerContent>
+        <paragraphContent>
+            <![CDATA[<p>
+            <ul><li>Retirar libre de impuesto hasta un máximo anual equivalente a 200 unidades tributarias mensuales. </li><li>No pudiendo exceder el equivalente a <b>1.200 unidades tributarias mensuales.</b></li><li>Optar por acoger sus retiros a una <b>exención máxima de 800 unidades tributarias mensuales durante un año.</b> </li></ul></p>]]>
+        </paragraphContent>
+        <CTRaudio>./audios/L2T3_01.mp3</CTRaudio>
+    </tabs>
+    <tabs>
+        <imgSrc>./pages/L2T3/images/tab-01.jpg</imgSrc>
+        <headerContent>
+            <![CDATA[<h2>Decreto de Ley Nº 3.500. Artículo 42 quáter.</h2>]]>
+        </headerContent>
+        <paragraphContent>
+            <![CDATA[No tienen exención tributaria en el excedente de libre disposición:<br><ul><li>
+Las cotizaciones voluntarias o depósitos de ahorro previsional voluntario, con menos de 48 meses de antigüedad en la cuenta.</li>
+<li>La cotizaciones obligatorias, voluntarias y depósitos convenidos efectuadas con posterioridad a la pensión.</li>
+<li>Los Depósitos Convenidos efectuados con anterioridad a enero de 2011.</li>
+<li>Los Depósitos Convenidos efectuados a partir de enero de 2011, por sobre las 900 UF anuales y su rentabilidad.</li></ul>]]>
+        </paragraphContent>
+        <CTRaudio>./audios/L2T3_02.mp3</CTRaudio>
+    </tabs>
+        <tabs>
+        <imgSrc>./pages/L2T3/images/tab-03.jpg</imgSrc>
+        <headerContent>
+            <![CDATA[<h2>Transitorio de la Ley Nº 19.768 (art.71 DL 3.500). Artículo 6°.</h2>]]>
+        </headerContent>
+        <paragraphContent>
+            <![CDATA[<ul><li>Los retiros de excedentes de libre disposición que se generen por opción de los afiliados que se pensionen pagarán un impuesto único, cuya tasa se calculará al momento en que éstos se acojan a pensión, aplicando la tabla fijada para el Impuesto Global Complementario, <b>al 10% del monto total que pueda ser objeto de retiro, </b>
+ sin que dichos retiros se adicionen a otras rentas del pensionado para la declaración y pago de cualquier otro impuesto.</li><li>La tasa de impuesto así determinada se aplicará sobre el monto de cada retiro de excedente de libre disposición que efectúe el pensionado. <b>El impuesto resultante deberá ser retenido y enterado en Tesorería por la Administradora.</b></li></ul></p>]]>
+        </paragraphContent>
+        <CTRaudio>./audios/L2T3_03.mp3</CTRaudio>
+    </tabs>
+  
+    <thumbsnail>
+        <thumb_content>
+        <image></image>
+        <thumbText><p>Decreto de Ley Nº 3.500. Artículo 42 ter</p></thumbText>
+        </thumb_content>
+        <thumb_content>
+            <image></image>
+            <thumbText>  Decreto de Ley Nº 3.500. Artículo 42 quáter </thumbText>
+        </thumb_content>
+              <thumb_content>
+            <image></image>
+            <thumbText>Transitorio de la Ley Nº 19.768 (art.71 DL 3.500). Artículo 6°</thumbText>
+        </thumb_content>
+        
+    </thumbsnail>
+</clickToReveal>
