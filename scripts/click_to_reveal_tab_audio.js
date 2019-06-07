@@ -1,6 +1,5 @@
-var globalisPlaying;
-var videoEnded = false;
 var userdefinedpaused = false;
+var globalisPlaying = true;
 var videRef;
 define([], function() {
 
@@ -70,20 +69,9 @@ define([], function() {
     ClickRevealTemplate.prototype.addMediaElement = function() {
 
         $(this.container).find('#audio_ctr').mediaelementplayer({
-            autoRewind: false,
             features: ['playpause'],
             success: function(mediaElement, domObject) {
                 videRef = mediaElement;
-                mediaElement.addEventListener('play', function(e) {
-                    globalisPlaying = true;
-                    videoEnded = false;
-                    userdefinedpaused = false;
-                })
-                mediaElement.addEventListener('pause', function(e) {
-                    if (globalisPlaying == true) {
-                        userdefinedpaused = true;
-                    }
-                })
             }
         });
     }
@@ -110,11 +98,10 @@ define([], function() {
     }
 
     ClickRevealTemplate.prototype.closeContent = function() {
-        var CtrTab_Audio = document.getElementById('audio_ctr');
         $('.item').removeClass('selected');
         $('#scrolltabcontent, .close-icon').hide();
         $('.scrolltabcontent-instruction').show();
-        CtrTab_Audio.pause();
+        videRef.pause();
     }
 
     ClickRevealTemplate.prototype.addAudio = function(id) {
@@ -157,6 +144,7 @@ define([], function() {
 
     ClickRevealTemplate.prototype.loadContent = function(event) {
         var contentID = $(event.currentTarget).attr('id').split('_')[1];
+        videRef.pause();
 
         if (!contentID) return;
         $(this.container).find('.scrolltabcontent-instruction').hide()
@@ -166,7 +154,6 @@ define([], function() {
         this.addContent(contentID)
         this.addAudio(contentID);
         this.checkCompletion();
-        //$('.mejs__button').removeClass('mejs__replay');
     }
     return ClickRevealTemplate;
 });
