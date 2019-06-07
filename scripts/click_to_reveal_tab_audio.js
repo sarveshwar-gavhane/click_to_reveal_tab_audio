@@ -6,6 +6,8 @@ define([], function() {
     function ClickRevealTemplate() {
         this.tabsArray = [];
         this.mediaelemantFlag = false;
+        this.container;
+        this.xml;
     }
 
     ClickRevealTemplate.prototype = new Util();
@@ -13,8 +15,8 @@ define([], function() {
 
     ClickRevealTemplate.prototype.init = function(xmlName) {
         var ref = this;
-        ref.container = this.getPageContainer();
 
+        ref.container = this.getPageContainer();
         $(ref.container).find(".clickToRevealTabBackBtn").click(function() {
             $(ref.container).hide();
             $('.fixed_block').show();
@@ -28,28 +30,9 @@ define([], function() {
             url: "data/" + xmlName + ".xml",
             dataType: "xml",
             success: function(xml) {
-                ref.xml = xml;
+                ref.xml = xml
                 ref.addTranscriptResources();
-
-                var noOfTabs = $(xml).find('tabs').length;
-                var thumbLength = $(xml).find("thumb_content").length;
-                var visitedImage = $(xml).find('imageVisited').text();
-                var str = '';
-
-                for (var i = 0; i < noOfTabs; i++) {
-                    ref.tabsArray.push(-1);
-                }
-
-                str += '<div class="owl-carousel" id="carouselTab">';
-                for (var i = 0; i < thumbLength; i++) {
-                    str += '<div class="item click_to_reveal_audio_item" id="carousal_' + i + '">';
-                    str += '<img class="CTRAvisitedImage" src="' + visitedImage + '"/>';
-                    str += '<h3>' + $(ref.xml).find('thumb_content').eq(i).find('thumbText').text() + '</h3></div>';
-                }
-                str += '</div>'
-
-                $(ref.container).find('.clickToReveal_tab_audio').find('.crouselContainer').html(str);
-                $('.click_to_reveal_audio_item').addClass($(xml).find("widthClass").text());
+                ref.createCTRtabs();
                 ref.loadSlider();
             }
         });
@@ -66,6 +49,23 @@ define([], function() {
         }
     }
 
+    ClickRevealTemplate.prototype.createCTRtabs = function() {
+        var thumbLength = $(this.xml).find("thumb_content").length;
+        var visitedImage = $(this.xml).find('imageVisited').text();
+        var str = '';
+
+        str += '<div class="owl-carousel">';
+        for (var i = 0; i < thumbLength; i++) {
+            str += '<div class="item tab-width" id="carousal_' + i + '">';
+            str += '<img class="CTRAvisitedImage" src="' + visitedImage + '"/>';
+            str += '<h3>' + $(this.xml).find('thumb_content').eq(i).find('thumbText').text() + '</h3></div>';
+        }
+        str += '</div>'
+
+        $(this.container).find('.clickToReveal_tab_audio').find('.crouselContainer').html(str);
+        $('.tab-width').addClass($(this.xml).find("widthClass").text());
+    }
+
     ClickRevealTemplate.prototype.addMediaElement = function() {
 
         $(this.container).find('#audio_ctr').mediaelementplayer({
@@ -80,6 +80,7 @@ define([], function() {
         this.play = videRef.paused;
         videRef.pause();
     }
+
     ClickRevealTemplate.prototype.playMedia = function() {
         if (!this.play) {
             videRef.play();
