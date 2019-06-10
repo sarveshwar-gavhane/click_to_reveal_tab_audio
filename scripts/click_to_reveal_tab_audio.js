@@ -72,6 +72,9 @@ define([], function() {
             features: ['playpause'],
             success: function(mediaElement, domObject) {
                 videRef = mediaElement;
+                mediaElement.addEventListener('ended', function(e) {
+                    $('.mejs__button').removeClass('mejs__replay')
+                })
             }
         });
     }
